@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Salesdetails.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                </br>
+                    <label for="txtCustomerName">Customer Name</label>
+                    <input id="txtCustomerName" type="text" placeholder="Enter Customer Name" class="form-control">
+                    </input>
+            </div>
+
+            <div class="col-6">
+                </br>
+                <label for="txtState">State</label>
+                 <input id="txtState" type="text" placeholder="Enter Customer State" class="form-control">
+                 </input>
+          </div>
+            
+        </div>
+    
+
+         <div class="row">
+            <div class="col-6">
+                </br>
+                    <label for="ddlBankName">Customer Bank Name</label>
+                        <select id="ddlBankName" class="form-control">
+                            <option value="Select Bank Name">Select Bank Name</option>
+                            <option value="ICICI Bank">ICICI Bank</option>
+                            <option value="HDFC Bank">HDFC Bank</option>
+                            <option value="Citi Bank">Citi Bank</option>
+                        </select>
+                </div>
+
+
+                <div class="col-6">
+                    </br>
+                   
+                    <label for="ddlPaymentMode">Payment Mode</label>
+                        <select id="ddlPaymentMode" class="form-control">
+                            <option value="Select Payment Mode">Select Payment Mode</option>
+                            <option value="Cash">Cash</option>
+                            <option value="Credit Card">Credit Card</option>
+                            <option value="Debit Card">Debit Card</option>
+                        </select>
+                </div>
+             </div>
+    
+           
+        <div class="row">
+                    <div class="col-12">
+                        </br>
+                            <label for="txtProductName">Product Name</label>
+                            <input id="txtProductName" type="text" placeholder="Enter Product Name" class="form-control">
+                            </input>
+                    </div>
+                    
+        </div>
+               
+        <div class="row">
+                <div class="col-6">
+                    </br>
+                        <label for="txtProductPrice">Product Price</label>
+                        <input type="number" id="txtProductPrice" placeholder="Enter Product Price"  class="form-control">
+                        </input>
+                </div>
+
+
+                <div class="col-6">
+                    </br>
+                    <label for="txtQuantity">Quantity</label>
+                     <input type="number" id="txtQuantity" placeholder="Enter Quantity" class="form-control">
+                     </input>
+              </div>
+        </div>
+  
+
+        <div class="row">
+            <div class="col-6">
+            <!--Use input tag with type = "submit" when we want to send data to server through API via Form Tag-->
+            <!-- <input id="btnSubmit" type="submit" class="btn btn-primary">-->
+            </br>
+                <button id="btnSubmit" class="btn btn-primary btn-lg" onclick="onSubmitButtonClickEvent();">Submit</button>
+                <button id="btnCancel" class="btn btn-danger btn-lg" onclick="onCancelClickEvent();">Cancel</button>
+            </div>
+        </div>
+</div>
+        
+</body>
+
+<script src="../Lib/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="../Model/CustomerModel.js"></script>
+<script src="../Model/productModel.js"></script>
+<script src="../Model/salesModel.js"></script>
+<script src="../Controller/salesController.js"></script>
+ 
+</html>
